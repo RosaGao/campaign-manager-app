@@ -2,9 +2,8 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true,
-    "python.linting.pylintArgs": [
-      "--load-plugins=pylint_django"
-  ],
+    "editor.detectIndentation": true,
+    "editor.tabSize": 4
   },
   "python.formatting.provider": "black",
 
@@ -13,4 +12,5 @@
   ],
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
+  "python.analysis.typeCheckingMode": "off",
 }
