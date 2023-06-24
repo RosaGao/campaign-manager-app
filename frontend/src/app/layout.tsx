@@ -7,7 +7,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${merriweather.variable} ${nunito.variable}`}>
+    <html lang="en" className={`${merriweather.variable} ${nunito.variable}`}
+      suppressHydrationWarning={true}
+    >
       <body>{children}</body>
     </html>
   )

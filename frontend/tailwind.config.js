@@ -16,9 +16,13 @@ module.exports = {
       fontFamily: {
         merriweather: ['var(--font-merriweather)'],
         nunito: ['var(--font-nunito)']
+      },
+      height: {
+        container: '100vh',
+      },
+      width: {
+        content: '75%'
       }
-      
-      
     },
   },
   
