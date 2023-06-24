@@ -24,7 +24,7 @@ class Campaign(models.Model):
     def save(self, *args, **kwargs):
         slug_to_assign = slugify(self.title)  # slugs must be unique
         if Campaign.objects.filter(slug=slug_to_assign).exists():
-            slug_to_assign = slug_to_assign + Campaign.objects.all().count()
+            slug_to_assign = slug_to_assign + str(Campaign.objects.all().count())
         self.slug = slug_to_assign
         super().save(*args, **kwargs)
 
