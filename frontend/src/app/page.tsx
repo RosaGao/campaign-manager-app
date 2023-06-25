@@ -1,7 +1,6 @@
 import CampaignPage from '../components/CampaignPage';
 import { Campaign } from '../lib/types';
 import Head from 'next/head'
-import Form from '@/components/Form';
 
 // fetch data at build time
 export async function getCampaigns(): Promise<Campaign[]> {
